@@ -185,7 +185,7 @@ static Key keys[] = {
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		quit,		{0} },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
-	{ MODKEY,			XK_F4,		spawn,		SHCMD("prompt \"Suspend computer?\" \"sudo pm-suspend\"") },
+	{ MODKEY,			XK_F4,		spawn,		SHCMD("prompt \"Suspend computer?\" \"sudo zzz\"") },
 	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
 	{ MODKEY,			XK_F6,		spawn,		SHCMD("") },
 	{ MODKEY,			XK_F7,		spawn,		SHCMD("") },
