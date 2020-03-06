@@ -89,7 +89,7 @@ static Key keys[] = {
 	/* modifier                     key        function        argument */
 	STACKKEYS(MODKEY,                          focus)
 	STACKKEYS(MODKEY|ShiftMask,                push)
-	{ MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("prompt \"Leave Xorg?\" \"killall Xorg\"") },
+	{ MODKEY|ShiftMask,		XK_Escape,	spawn,	SHCMD("prompt \"Leave Xorg?\" \"pkill -x Xorg\"") },
 	{ MODKEY,			XK_grave,	spawn,	SHCMD("dmenuunicode") },
 	/* { MODKEY|ShiftMask,		XK_grave,	togglescratch,	SHCMD("") }, */
 	TAGKEYS(			XK_1,		0)
