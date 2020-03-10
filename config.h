@@ -122,7 +122,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} },
 	/* { MODKEY|ShiftMask,		XK_t,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_y,		spawn,		SHCMD("st -e calcurse -D ~/.config/calcurse") },
+	/* { MODKEY,			XK_y,		spawn,		SHCMD("") }, */
 	/* { MODKEY|ShiftMask,		XK_y,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_u,		setlayout,	{.v = &layouts[3]} },
 	/* { MODKEY|ShiftMask,		XK_u,		spawn,		SHCMD("") }, */
@@ -163,7 +163,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,		XK_z,		incrgaps,	{.i = -1 } },
 	{ MODKEY,			XK_x,		spawn,		SHCMD("slock & xset dpms force off; mpc pause ; pauseallmpv") },
 	{ MODKEY|ShiftMask,		XK_x,		spawn,		SHCMD("prompt \"Shutdown computer?\" \"sudo -A shutdown -h now\"") },
-	/* { MODKEY,			XK_c,		spawn,		SHCMD("") }, */
+	{ MODKEY,			XK_c,		spawn,		SHCMD("st -e calcurse -D ~/.config/calcurse") },
 	{ MODKEY|ShiftMask,		XK_c,		spawn,		SHCMD("mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title=mpvfloat /dev/video0") },
 	{ MODKEY,			XK_v,		spawn,		SHCMD("st -e $EDITOR -c \"VimwikiIndex\"") },
 	{ MODKEY|ShiftMask,		XK_v,		spawn,		SHCMD("\{ killall xcompmgr || setsid xcompmgr & \} ; xwallpaper --zoom ~/.config/wall.png") },
@@ -180,20 +180,20 @@ static Key keys[] = {
 
 	{ MODKEY,			XK_Page_Up,	shiftview,	{ .i = -1 } },
 	{ MODKEY,			XK_Page_Down,	shiftview,	{ .i = 1 } },
-	{ MODKEY,			XK_Insert,		spawn,		SHCMD("showclip") },
+	{ MODKEY,			XK_Insert,	spawn,		SHCMD("showclip") },
 
 	{ MODKEY,			XK_F1,		spawn,		SHCMD("groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -") },
 	{ MODKEY,			XK_F2,		quit,		{0} },
 	{ MODKEY,			XK_F3,		spawn,		SHCMD("displayselect") },
 	{ MODKEY,			XK_F4,		spawn,		SHCMD("prompt \"Suspend computer?\" \"sudo zzz\"") },
 	{ MODKEY,			XK_F5,		xrdb,		{.v = NULL } },
-	{ MODKEY,			XK_F6,		spawn,		SHCMD("") },
-	{ MODKEY,			XK_F7,		spawn,		SHCMD("") },
-	{ MODKEY,			XK_F8,		spawn,		SHCMD("") },
+	/* { MODKEY,			XK_F6,		spawn,		SHCMD("") }, */
+	/* { MODKEY,			XK_F7,		spawn,		SHCMD("") }, */
+	/* { MODKEY,			XK_F8,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_F9,		spawn,		SHCMD("dmenumount") },
 	{ MODKEY,			XK_F10,		spawn,		SHCMD("dmenuumount") },
 	/* { MODKEY,			XK_F11,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_F12,		spawn,		SHCMD("") },
+	/* { MODKEY,			XK_F12,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_space,	zoom,		{0} },
 	{ MODKEY|ShiftMask,		XK_space,	togglefloating,	{0} },
 
