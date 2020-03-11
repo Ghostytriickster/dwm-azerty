@@ -122,7 +122,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_t,		setlayout,	{.v = &layouts[0]} },
 	/* { MODKEY|ShiftMask,		XK_t,		spawn,		SHCMD("") }, */
-	/* { MODKEY,			XK_y,		spawn,		SHCMD("") }, */
+	{ MODKEY,			XK_y,		setlayout,	{.v = &layouts[2]} },
 	/* { MODKEY|ShiftMask,		XK_y,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_u,		setlayout,	{.v = &layouts[3]} },
 	/* { MODKEY|ShiftMask,		XK_u,		spawn,		SHCMD("") }, */
