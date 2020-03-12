@@ -116,7 +116,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
 	/* { MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e htop") },
+	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("tutorialvids") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD("st -e $FILE") },
 	/* { MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("") }, */
@@ -139,8 +139,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_backslash,		view,		{0} },
 	/* { MODKEY|ShiftMask,		XK_backslash,		spawn,		SHCMD("") }, */
 
-	{ MODKEY,			XK_a,		spawn,		SHCMD("st -e alsamixer ; pkill -RTMIN+10 dwmblocks") },
-	/* { MODKEY|ShiftMask,		XK_a,		spawn,		SHCMD("") }, */
+	{ MODKEY,			XK_a,		spawn,		SHCMD("st -e htop") },
+	{ MODKEY|ShiftMask,		XK_a,		spawn,		SHCMD("st -e alsamixer ; pkill -RTMIN+10 dwmblocks") },
 	{ MODKEY,			XK_s,		togglesticky,	{0} },
 	/* { MODKEY|ShiftMask,		XK_s,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_d,		spawn,          {.v = dmenucmd } },
