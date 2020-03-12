@@ -116,7 +116,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
 	/* { MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD("") }, */
-	{ MODKEY,			XK_e,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks") },
+	/* { MODKEY,			XK_e,		spawn,		SHCMD("st -e neomutt ; pkill -RTMIN+12 dwmblocks") }, */
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD("tutorialvids") },
 	{ MODKEY,			XK_r,		spawn,		SHCMD("st -e $FILE") },
 	/* { MODKEY|ShiftMask,		XK_r,		spawn,		SHCMD("") }, */
