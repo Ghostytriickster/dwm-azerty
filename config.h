@@ -126,8 +126,8 @@ static Key keys[] = {
 	{ MODKEY,			XK_u,		setlayout,	{.v = &layouts[2]} },
 	/* { MODKEY|ShiftMask,		XK_u,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_i,		incnmaster,     {.i = +1 } },
-	{ MODKEY|ShiftMask,		XK_i,		incnmaster,     {.i = -1 } },
-	/* { MODKEY,			XK_o,		spawn,		SHCMD("") }, */
+	/* { MODKEY|ShiftMask,		XK_i,		spawn,     	SHCMD("") }, */
+	{ MODKEY,			XK_o,		incmaster,	{.i = -1 } }
 	/* { MODKEY|ShiftMask,		XK_o,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_p,			spawn,		SHCMD("mpc toggle") },
 	{ MODKEY|ShiftMask,		XK_p,			spawn,		SHCMD("mpc pause ; pauseallmpv") },
